@@ -38,9 +38,15 @@ def str_para_function(string):
 myStr="Hello!"
 str_para_function(myStr)
 
+print("-------------------------------")
+print("Default Values")
 
+def funcWithDefaults(para1, para2=30):
+    ans = para1 + para2
+    return ans
 
+print("answer= %d" % funcWithDefaults(1, 2))
 
-
+print("answer= %d" % funcWithDefaults(1))
 
 
